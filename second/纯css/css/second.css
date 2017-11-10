@@ -1,0 +1,198 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: arial;
+}
+a{ text-decoration:none; }
+body{
+	background: url(../imgs/rectangle_copy.png) no-repeat;
+}
+.box{
+	width: 960px;height: 796px;
+	margin: 0 auto;
+}
+.header{
+	height: 116px;
+	font-size: 40px;
+	line-height: 116px;
+}
+.header div{
+	display: inline-block;
+}
+.header_m{
+	margin-left: 140px;
+	margin-right: 130px;
+}
+.header_m a{
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	color: #fff;
+	background-color: #111111;
+	border-radius: 5px;
+}
+.header_m a:hover{
+	background-color: #8d3231;
+}
+.header_r{
+	height: 80px;
+}
+.header_r p{
+	padding-top: 39px;
+	float: left;
+	font-size: 20px;
+	line-height: 34px;
+}
+.header_r a{
+	width: 34px;
+	height: 34px;
+	background: url(../imgs/sina.png) no-repeat left ;
+	display: inline-block;
+}
+.header_r a:hover{
+	background: url(../imgs/facebook.png) no-repeat left ;
+}
+.middle{
+	height: 520px;
+	border-radius: 10px;
+}
+
+/*二级菜单*/
+.list{
+	height: 58px;
+	background-color: #eaeaea;
+	border-radius:10px 10px 0 0;
+	overflow: hidden;
+}
+.list ul,.list li{
+	list-style: none;
+	float: left;
+}
+.list>ul>li>ul{
+	position: absolute;
+	display: none;
+}
+.list>ul>li>ul>li{
+	float: none;
+}
+.list>ul>li:hover>a{
+	border-radius: 10px 10px 0 0;
+}
+.list>ul>li:hover ul{
+	display: block;
+	z-index: 100;
+}
+.list>ul>li>a{
+	width: 144px;
+	height: 38px;
+	margin-top: 10px;
+	margin-left: 13px;
+	display: block;
+	background-color: #111;
+	color: #eaeaea;
+	text-align: center;
+	font-size: 16px;
+	line-height: 38px;
+	border-radius: 8px;
+}
+.list>ul>li>ul>li>a{
+	width: 144px;
+	height: 38px;
+	margin-left: 13px;
+	display: block;
+	background-color: #111;
+	color: #eaeaea;
+	text-align: center;
+	font-size: 16px;
+	line-height: 38px;
+}
+.list>ul>li>ul>li:last-child>a{
+	border-radius: 0 0 10px 10px;
+}
+.list>ul>li>ul>li>a:hover{
+	color: #8b8b8b;
+	border-bottom: 1px solid #8b8b8b;
+}
+
+/*轮播图*/
+.banner_box{
+	height: 462px;
+	width: 960px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 0 0 10px 10px;
+}
+.banner{
+	width: 500%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 0;
+	transform: translate(0,0); /* 初始位置位移 */
+    animation: wf 10s linear/*动画速度相同*/ infinite/*动画播放无数次*/ alternate;
+    -webkit-animation: wf 10s linear/*动画速度相同*/ infinite/*动画播放无数次*/ alternate;
+}
+/* 创建wf动画规则 */
+/* 
+	一共轮播10s，
+   单张展示1600ms，即16%；
+   切换四次每次500ms，即5%；
+*/
+@keyframes wf {
+    0% {transform: translate(0,0);}
+    16% {transform: translate(0,0);} /* 停留1500ms */
+
+    21% {transform: translate(-20%,0);} /* 切换500ms 位移-20% */
+    37% {transform: translate(-20%,0);}
+
+    42% {transform: translate(-40%,0);}
+    58% {transform: translate(-40%,0);}
+
+    63% {transform: translate(-60%,0);}
+    79% {transform: translate(-60%,0);}
+
+    84% {transform: translate(-80%,0);}
+    100% {transform: translate(-80%,0);}
+}
+.banner img{
+	height: 462px;
+	width: 960px;
+	float: left;
+}
+
+.bottom{
+	height: 138px;
+	margin-top: 20px;
+	background-color: #af4341;
+	border-radius: 10px;
+}
+.bottom p{
+	width: 630px;
+	margin-left: 40px;
+	padding-top: 40px;
+	color: #fff;
+	font-size: 20px;
+	line-height: 30px;
+}
+.more{
+	float: right;
+	margin-top: 46px;
+	margin-right: 20px;
+	width: 200px;
+	height: 46px;
+	border-radius: 5px;
+	background-color: #490506;
+	font-size: 20px;
+	line-height: 46px;
+	text-align: center;
+}
+.more a{
+	color: #fff;
+}
+.more a:hover{
+	color: #70e8e1;
+}

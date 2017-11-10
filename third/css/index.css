@@ -1,0 +1,159 @@
+*{
+	padding: 0;
+	margin: 0; 
+}
+ul{list-style: none;}
+body{
+	min-width: 1440px;
+	background: url(../img/background.png) no-repeat;
+	background-color: #f9fff1;
+	background-size: 100%;
+	height: 3000px;
+}
+.left,.right{
+	position: fixed;
+	top: 30%;
+}
+.left{
+	left: 34px;
+}
+.right{
+	right: 34px;
+}
+.header{
+	width: 1000px;
+	height: 78px;
+	margin: 0 auto;
+}
+.cqupt{
+	margin-top: 15px;
+	display: inline-block;
+}
+.header_ul{
+	float: right;
+}
+.header_ul li{
+	float: left;
+	font-size: 16px;
+	margin-left: 10px;
+	padding:0 10px 0 10px;
+	line-height: 78px;
+	cursor: pointer;
+}
+.header_ul li:hover{
+	color: #fff;
+	background-color: #a4f087;
+}
+.map{
+	width: 1100px;
+	height: 740px;
+	margin: 0 auto;
+	margin-top: 790px;
+	text-align: center;
+	background: url(../img/mapwaikuang.png);
+}
+.mapmap{
+	margin-top: 50px;
+}
+.armtitle{
+	width: 1167px;
+	height: 765px;
+	margin: 120px auto;
+	text-align: center;
+	background: url(../img/armwaikuang.png)0 118px no-repeat;
+}
+.armtitle h4{
+	color: #ffc546;
+	margin-top: 60px;
+	font-size: 30px;
+}
+.armtitle ul{
+	width: 880px;
+	margin:30px 0 20px 180px;
+	height: 200px;
+}
+.armtitle li img{
+	width: 264px;
+	height: 200px;
+	float: left;
+	margin-left: 20px;
+	display: block;
+	border-radius: 10px;
+}
+.armtitle p{
+	width: 830px;
+	text-align: left;
+	margin-left: 200px;
+	text-indent: 2em;
+}
+.armtitle a{
+	display: block;
+	height: 78px;
+	width: 192px;
+	margin-left: 840px;
+}
+.fourBox{
+	width: 1020px;
+	height: 1270px;
+	background: url(../img/w_waikuang.png)0 126px no-repeat;
+	margin: 0 auto;
+}
+.box1,.box2,.box3,.box4{
+	width: 510px;
+	height: 645px;
+	float: left;
+}
+.fourBox img{
+	display: block;
+	margin: 0 auto;
+}
+.jianju{
+	padding-top: 40px;
+}
+.fourBox p{
+	width: 350px;
+	font-size: 12px;
+	line-height: 28px;
+	padding-top: 20px;
+	height: 94px;
+	margin: 0 auto;
+}
+.lastBox{
+	width: 1172px;
+	height: 1120px;
+	background: url(../img/w_background.png)no-repeat;
+	margin: 0 auto;
+}
+.welcome{
+	display: block;
+	margin: 0 auto;
+	padding-top: 120px;
+}
+.lastBox1,.lastBox2{
+	width: 838px;
+	height: 164px;
+	margin:60px 0 180px 208px;
+}
+.lastBox1 div,.lastBox2 div{
+	width: 600px;
+	float: right;
+	height: 164px;
+	font-size: 12px;
+	line-height: 28px;
+}
+.lastP{
+	height: 96px;
+}
+.lastBox1 div img,.lastBox2 div img{
+	display: block;
+	float: right;
+}
+.bottom{
+	width: 100%;
+	background-color: #d2f3aa;
+	height: 204px;
+	text-align: center;
+	padding-top: 50px;
+	font-size: 16px;
+	line-height: 30px;
+}

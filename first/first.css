@@ -1,0 +1,24 @@
+a { 
+	text-decoration: none; 
+	color: #ffd5e1;
+}
+a:hover{
+	color: #bcf5ee;
+	text-decoration: underline;
+}
+.pic{
+	width: 384px;
+	height: 216px;
+}
+.css1,.css2{
+	width: 200px;
+	height: 200px;
+	margin-bottom: 5px;
+}
+.css1{
+	background: blue;
+}
+.css2{
+	background: red;
+	display: inline-block;
+}
